@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Research background</title>
+
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Alan O' Dowd</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Background, publications and conferences</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Research background</h1>
+
+</div>
+
+
+<div id="introduction" class="section level2">
+<h2>1. Introduction</h2>
+<p>Cognitive neuroscientist with 7+ years’ experience in experimental
+psychology and lifespan research. My research incorporates precisely
+controlled, scalable methods, a lifespan and individual differences
+perspective and bridges fundamental perceptual science with health
+research. I am passionate about conducting research that explores the
+relationship between behaviour and aspects of cognitive, physical and
+mental health across the lifespan in the general population. I also have
+a particular interest in exploring how both exteroceptive and
+interoceptive perception are related to broader physiology, such as
+cardiovascular and respiratory function.</p>
+<p><img src="profile_picture.jfif" width="200px" /></p>
+<hr />
+</div>
+<div id="research-design-methods" class="section level2">
+<h2>2. Research Design &amp; Methods</h2>
+<p>Experimental design · Psychophysics · Mixed-methods research · Survey
+design · Behavioural testing · Usability/task analysis · Longitudinal
+studies · Python Data &amp; Analysis SQL · R · Statistical modelling ·
+Big-data analysis · Data visualisation · Data dashboards (Quarto)
+Communication &amp; Collaboration Technical &amp; non-technical writing
+· Lecturing · Presentations · Cross-functional collaboration · Workshop
+organisation and delivery · Mentorship &amp; supervision · Public
+engagement</p>
+<hr />
+</div>
+<div id="publications" class="section level2">
+<h2>3. Publications</h2>
+<p><strong>O’Dowd, A.</strong>, &amp; Newell, F.N. (In Prep). Ageing
+affects haptic 2D shape discrimination independently of sensory acuity
+or cognition.</p>
+<p><strong>O’Dowd, A.</strong> (Under review). Auditory temporal
+resolution does not constrain the temporal limits within which auditory
+and visual information is integrated: An ageing study. PLOS One.</p>
+<p>Seveso, M.A., Hirst, R.J., <strong>O’Dowd, A.</strong> et al. (2026).
+Visual and tactile motion cues enhance the categorisation of novel
+object shapes. Experimental Brain Research, 244, 48.</p>
+<p>Hirst, R.J., Roberts, C., Seveso, M.A., <strong>O’Dowd, A.</strong>
+et al. (2026). Delivering tactile stimuli via mobile browsers.
+Behavioural Research Methods, 58, 106.</p>
+<p><strong>O’Dowd, A.</strong>, Hirst, R.J., Newell, F.N. (2026).
+Crossmodal correspondences influence adaptation during rule-based
+category learning. Journal of Experimental Psychology: Learning, Memory
+and Cognition.</p>
+<p>Gherri, E., Garofalo, G.,<strong>O’Dowd, A.</strong>. &amp; Cudia, A.
+(2025). Anticipatory effects of goal-directed action planning on
+peri-personal space. Cortex, 185, 170–183.</p>
+<p><strong>O’Dowd, A.</strong> et al. (2025). Generalisation to novel
+exemplars of learned shape categories based on visual and auditory
+spatial cues. Psychonomic Bulletin &amp; Review, 32(1), 417–429.</p>
+<p><strong>O’Dowd, A.</strong> et al. (2024). Nutrition is associated
+with differences in multisensory integration in healthy older adults.
+Nutritional Neuroscience, 27(11), 1226–1236.</p>
+<p><strong>O’Dowd, A.</strong> et al. (2024). Is a sex difference in
+audio-visual temporal precision consistent across age groups? Psychology
+and Aging, 39(4), 413.</p>
+<p>Azizi, Z., Hirst, R.J., <strong>O’Dowd, A.</strong> et al. (2024).
+Allostatic load and multisensory integration in middle-aged and older
+adults. Archives of Gerontology and Geriatrics, 116, 105155.</p>
+<p><strong>O’Dowd, A.</strong> et al. (2024). Individual differences in
+seated resting heart rate are associated with multisensory perceptual
+function. Psychophysiology, 61(1), e14430.</p>
+<p>Newell, F.N. et al. incl. <strong>O’Dowd, A.</strong> (2023).
+Multisensory perception constrains the formation of object categories: A
+review. Philosophical Transactions of the Royal Society B, 378(1886),
+20220342.</p>
+<p><strong>O’Dowd, A.</strong> et al. (2023). Longitudinal grip strength
+is associated with susceptibility to the Sound Induced Flash Illusion.
+Aging Brain, 3, 100076.</p>
+<p><strong>O’Dowd, A.</strong> et al. (2023). Older adults with slow
+sit-to-stand times show reduced temporal precision of audio-visual
+integration. Experimental Brain Research, 241(6), 1633–1642.</p>
+<p><strong>O’Dowd, A.</strong> et al. (2023). Temporal precision of
+audiovisual integration is associated with longitudinal fall incidents.
+Scientific Reports, 13(1), 7167.</p>
+<p><strong>O’Dowd, A.</strong> et al. (2022). Self-reported sensory
+decline is longitudinally associated with modality-general and
+modality-specific factors. Innovation in Aging, 6(7), igac069.</p>
+<p>Cunningham, J., <strong>O’Dowd, A.</strong> et al. (2022).
+Multisensory perception is not influenced by previous concussion history
+in retired rugby union players. Brain Injury, 36(9), 1123–1132.</p>
+<p><strong>O’Dowd, A.</strong>, Cooney, S.M. &amp; Newell, F.N. (2022).
+Self-reported vividness of tactile imagery. Consciousness and Cognition,
+103, 103376.</p>
+<p><strong>O’Dowd, A.</strong> et al. (2021). The development of
+visuotactile congruency effects for sequences of events. Journal of
+Experimental Child Psychology, 207, 105094.</p>
+<p><strong>O’Dowd, A.</strong> &amp; Newell, F.N. (2020). The rubber
+hand illusion is influenced by self-recognition. Neuroscience Letters,
+720, 134756.</p>
+<p><strong>O’Dowd, A.</strong>, Sorgini, F. &amp; Newell, F.N. (2020).
+Seeing an image of the hand affects performance on a crossmodal
+congruency task. Consciousness and Cognition, 80, 102900.</p>
+<p><strong>O’Dowd, A.</strong> et al. (2019). Synaesthesia and mental
+imagery in cross-modal processes. Philosophical Transactions of the
+Royal Society B, 374(1787), 20180359.</p>
+<p>Forsberg, A., <strong>O’Dowd, A.</strong> &amp; Gherri, E. (2019).
+Tool use modulates visuo-tactile integration in far space. Biological
+Psychology, 145, 42–54.</p>
+<p>O’Callaghan, G., <strong>O’Dowd, A.</strong>, Simões-Franklin, C.,
+Stapleton, J., &amp; Newell, F. N. (2018). Tactile-to-visual cross-modal
+transfer of texture categorisation following training: an fMRI study.
+Frontiers in Integrative Neuroscience, 12, 24.</p>
+<p>O’Callaghan, G., <strong>O’Dowd, A.</strong>, Stapleton, J.,
+Merriman, N. A., Roudaia, E., &amp; Newell, F. N. (2018). Changes in
+regional brain grey-matter volume following successful completion of a
+sensori-motor intervention targeted at healthy and fall-prone older
+adults. Multisensory Research, 31(3-4), 317-344.</p>
+<hr />
+</div>
+<div id="conferences-and-workshops" class="section level2">
+<h2>4. Conferences and workshops</h2>
+<p><strong>Invited</strong></p>
+<p>Trinity College Dublin School of Psychology Research Day (Dublin,
+2025; School of Psychology PostDoc Research Paper Prize).</p>
+<p>Behavioural Neuroscience Seminar (University College Dublin,
+2024).</p>
+<p>Experimental Psychology Society Meeting (Nottingham, 2024).</p>
+<p><strong>Oral</strong></p>
+<p>Spatial Cognition Research Symposium (Technical University Dublin,
+2026).</p>
+<p>Tactile Research Group Annual Meeting (New York, 2024).</p>
+<p>Experimental Psychology Society Meeting (London, 2023).</p>
+<p>63rd Annual Meeting of the Psychonomic Society (Boston, 2022).</p>
+<p>19th British Psychological Society Cognitive Section Annual
+Conference (Sussex, 2022).</p>
+<p>20th International Multisensory Research Forum (Ulm, 2022).</p>
+<p>43rd European Conference on Visual Perception (Virtual, 2021).</p>
+<p>60th Annual Meeting of the Psychonomic Society (Montreal, 2019).</p>
+<p><strong>Poster</strong></p>
+<p>EuroHaptics 2026 (Sienna, 2026).</p>
+<p>24th International Multisensory Research Forum (Genoa, 2026).</p>
+<p>47th European Conference on Visual Perception (Mainz, 2025).</p>
+<p>23rd International Multisensory Research Forum (Durham, 2025).</p>
+<p>65th Annual Meeting of the Psychonomic Society (New York, 2024).</p>
+<p>46th European Conference on Visual Perception (Aberdeen, 2024).</p>
+<p>Trinity College Dublin School of Psychology Research Day (Dublin,
+2024).</p>
+<p>21st International Multisensory Research Forum (Brussels, 2023).</p>
+<p>Applied Vision Association Meeting (Nottingham, 2022).</p>
+<p>69th Annual &amp; Scientific Meeting of the Irish Gerontological
+Society (Cavan, 2022; President’s Award).</p>
+<p>60th Annual Meeting of the Psychonomic Society (Montreal, 2019).</p>
+<p>EPS Research in Touch workshop (Nottingham, 2019).</p>
+<p>41st European Conference on Visual Perception (Trieste, 2018).</p>
+<p>1st Body Representation Network (Edinburgh, 2018).</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
